@@ -1,0 +1,362 @@
+/* General Styles */
+body {
+    margin: 0px;
+    font-family: "Rubik", sans-serif;
+    --MainBgpurpleColor: #120e29;
+    --TextColorLightPurple: #a379ff;
+    --TextColorWhite: white;
+    --ButtonColor: rgb(255, 186, 255);
+    --MainBgblackColor: black;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: var(--MainBgpurpleColor);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 50px;
+    color: var(--TextColorWhite);
+  }
+  
+  #logo {
+    font-weight: bolder;
+    font-size: 13px;
+    align-self: center;
+    color: var(--TextColorWhite);
+  }
+  #logo h1 {
+    display: inline-block;
+    color: var(--TextColorLightPurple);
+  }
+  
+  #logoimg {
+    width: 20px;
+  }
+  
+  .menuButtons {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+  }
+  
+  .navButton {
+    color: var(--TextColorWhite);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: x-small;
+  }
+  
+  .navButton:hover {
+    color: var(--TextColorLightPurple);
+  }
+  
+  .toggle {
+    background-color: transparent;
+    border: none;
+    color: var(--TextColorWhite);
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  /* Active Navigation Styling */
+  #active {
+    position: relative;
+    color: var(--TextColorLightPurple);
+  }
+  
+  #selectedNav {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: var(--TextColorLightPurple);
+  }
+  
+  /* Intro Section */
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px 0px;
+    background: var(--MainBgpurpleColor);
+    color: var(--TextColorWhite);
+    height: auto;
+  }
+  
+  .intro-content {
+    max-width: 60%;
+  }
+  
+  .intro-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .highlightedText {
+    color: var(--TextColorLightPurple);
+  }
+  
+  .intro-content p {
+    font-size: 0.8rem;
+    line-height: 190%;
+  }
+  
+  .intro-content button {
+    padding: 20px 30px;
+    background: #b99bfc;
+    border-radius: 7px;
+    color: var(--MainBgpurpleColor);
+    font-size: x-small;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    margin-top: 9px;
+  }
+  .intro-image {
+    width: 350px;
+  }
+  .intro-content button:hover {
+    background: #cab3fc;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 35px 40px;
+    background: linear-gradient(
+      to bottom,
+      #120e29 20%,
+      #2a224f 50%,
+      #312053 70%,
+      #473372 100%
+    );
+    color: var(--TextColorWhite);
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--TextColorWhite);
+    text-align: center;
+  }
+  .about h2:hover {
+    color: var(--TextColorLightPurple);
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  
+  .about-text p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .card {
+    background-color: var(--TextColorLightPurple); /* Light purple for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: var(--MainBgpurpleColor);
+    transition: transform 0.3s;
+  }
+  
+  .card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--MainBgpurpleColor);
+  }
+  
+  .card p {
+    font-size: 0.85rem;
+    color: var(--MainBgpurpleColor);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-text {
+      max-width: 100%;
+      text-align: center;
+    }
+    .about-cards {
+      justify-content: center;
+    }
+  }
+  
+  /* Projects Section */
+  .projects-preview {
+    padding: 50px 40px;
+    background-color: var(--MainBgpurpleColor); /* Dark theme background */
+    color: var(--TextColorWhite);
+  }
+  
+  .projects-preview h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--TextColorWhite);
+    text-align: center;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .project-item {
+    background-color: var(--TextColorLightPurple); /* Light purple for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: var(--MainBgpurpleColor);
+    transition: transform 0.3s;
+  }
+  
+  .project-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 768px) {
+    .project-item {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: var(
+      --MainBgblackColor
+    ); /* Dark background to match the theme */
+    color: var(--TextColorWhite);
+    padding: 20px 40px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .footer-link {
+    color: var(--TextColorLightPurple); /* Light purple for links */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #b99bfc; /* Hover color */
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+    }
+  }
+  
+  /* for responsive design  */
+  @media (max-width: 768px) {
+    .toggle {
+      display: block;
+    }
+  
+    .menuButtons {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--MainBgpurpleColor);
+      overflow: hidden;
+      transition: all 0.6s;
+      max-height: 0px;
+    }
+  
+    .navButton {
+      width: 150px;
+      text-align: center;
+      margin: 10px;
+      padding: 7px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    #selectedNav {
+      display: none;
+    }
+  }

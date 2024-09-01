@@ -1,0 +1,49 @@
+/* Interests Page */
+.interests {
+    background-color: var(
+      --MainBgblackColor
+    ); /* Dark background to match theme */
+    color: var(--TextColorWhite);
+    padding: 40px;
+  }
+  
+  .interests h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--TextColorLightPurple);
+    margin-bottom: 40px;
+  }
+  
+  .interest-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .interest-card {
+    background: var(--MainBgpurpleColor);
+    color: var(--TextColorWhite);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .interest-card h2 {
+    font-size: 1.8rem;
+    color: var(--TextColorLightPurple);
+    margin-bottom: 10px;
+  }
+  
+  .interest-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .interest-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

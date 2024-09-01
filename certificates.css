@@ -1,0 +1,60 @@
+/* Certificates Page */
+.certificates {
+    background-color: var(
+      --MainBgblackColor
+    ); /* Dark background to match theme */
+    color: var(--TextColorWhite);
+    padding: 40px;
+  }
+  
+  .certificates h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--TextColorLightPurple);
+    margin-bottom: 40px;
+  }
+  
+  .certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .certificate-card {
+    background: var(--MainBgpurpleColor);
+    color: var(--TextColorWhite);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .certificate-info h2 {
+    font-size: 1.8rem;
+    color: var(--TextColorLightPurple);
+    margin-bottom: 10px;
+  }
+  
+  .certificate-info p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .certificate-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
